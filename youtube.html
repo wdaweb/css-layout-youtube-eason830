@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shottcut icon" href="./img/littlelogo.png">
+  <link rel="bookmark" href="./img/littlelogo.png">
+  <link rel="stylesheet" href="./twicon.css">
+  <title>Youtube</title>
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .top{
+      z-index: 2;
+      width:87%;
+      height: 115px;
+      background-color: white;
+      text-align: center;
+      float: left;
+      overflow: auto;
+      position: fixed;
+      right: 0;
+    }
+  
+
+    .right{
+      position: fixed;
+      top: 62px;
+      width: 87%;
+      float: right;
+    }
+    .top_bottom1{
+      padding: 5px;
+      width: 50px;
+      border-radius: 30px;
+      background-color: rgb(233, 233, 233);
+      border: 1px solid rgb(200, 195, 195);
+      position: fixed;
+      top: 75px;
+      left: 42.5%;
+      float: right;
+    }
+    .top_bottom2{
+      padding: 5px;
+      width: 50px;
+      border-radius: 30px;
+      background-color: rgb(233, 233, 233);
+      border: 1px solid rgb(200, 195, 195);
+      position: fixed;
+      top: 75px;
+      left: 46%;
+      float: right;
+    }
+    .top_bottom3{
+      padding: 5px;
+      width: 50px;
+      border-radius: 30px;
+      background-color: rgb(233, 233, 233);
+      border: 1px solid rgb(200, 195, 195);
+      position: fixed;
+      top: 75px;
+      left: 49.5%;
+      float: right;
+    }
+    .top_bottom4{
+      padding: 5px;
+      width: 55px;
+      border-radius: 30px;
+      background-color: rgb(233, 233, 233);
+      border: 1px solid rgb(200, 195, 195);
+      position: fixed;
+      top: 75px;
+      left: 53%;
+      float: right;
+    }
+    .top_bottom5{
+      padding: 5px;
+      width: 83px;
+      border-radius: 30px;
+      background-color: rgb(233, 233, 233);
+      border: 1px solid rgb(200, 195, 195);
+      position: fixed;
+      top: 75px;
+      left: 56.5%;
+      float: right;
+    }
+    
+    #search{
+      
+      width: 30%;
+      height: 40px;
+      position: fixed;
+      top: 7px;
+      left: 32%;
+      float: left;
+    }
+
+    .searchIcon{
+      position: fixed;
+      left: 62%;
+      top: 7px;
+    }
+    .mic{
+      position: fixed;
+      left: 66.5%;
+      top: 7px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .three{
+      position: fixed;
+      float: right;
+      height: 30px;
+      top: 12px;
+      right: 142px;
+    }
+    .nine{
+      position: fixed;
+      float: right;
+      height: 30px;
+      top:12px;
+      right: 185px;
+    }
+    
+    .sign_top{
+      z-index: 2;
+      position: fixed;
+      height: 40px;
+      float: right;
+      top: 7px;
+      right: 20px;
+    }
+    
+    .sidebar{
+      z-index: 2;
+      position: fixed;
+      float: left;
+      width: 13%;
+      overflow-y: auto;
+      height: 880px;
+      top: 60px;
+    }
+  
+
+    .side{
+      
+      line-height: 40px;
+      padding-left: 30px;
+      text-align: left;
+      font-size: 17px;
+    }
+    .side1{
+      background-color: rgb(241, 241, 241);
+    }
+
+    .side:hover{
+      background-color: rgb(236, 236, 236);
+    }
+
+    .lefttop666{
+      position: fixed;
+      height: 67px;
+    }
+    .leftlist{
+      margin-left:13px;
+      margin-bottom: 6px;
+      
+    }
+
+    .leftbigicon{
+      margin-top: 5px;
+      margin-left: 3px;
+      
+    }
+
+
+    span{
+      padding-left: 30px;
+    }
+    .firsticon{color: red;}
+
+      .iconbig{
+        font-size: 23px;
+      }
+
+
+
+    .side_m{
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: rgb(68, 67, 67);
+    }
+    .side_b{
+      line-height: 30px;
+      padding-left: 25px;
+      color: rgb(59, 59, 59);
+      margin-top: 10px;
+    }
+    .side_bottom{
+      float: left;
+      font-size: .9rem;
+      text-align: left;
+      line-height: 15px;
+      color:rgb(102, 102, 102);
+      padding-left: 10px;
+    }
+    .lbb{
+      float: left;
+
+      margin-top: 17px;
+      margin-left: 10px;
+      margin-right: 55px;
+    }
+    .leftfinal{
+      position: relative;
+      left:20px;
+      float: left;
+      font-size: .7rem;
+      text-align: left;
+      line-height: 30px;
+      margin-top: 10px;
+      color: rgb(151, 149, 149);
+    }
+
+    .signicon{
+      position: relative;
+      top: 0;
+      left: 38px;
+      height: 45px;
+      width: 110px;
+
+    }
+
+
+  
+    #sidebar::-webkit-scrollbar { width: 10px; }
+#sidebar::-webkit-scrollbar-track { background: #fff; }
+#sidebar::-webkit-scrollbar-track-piece{ background: #fff; }
+#sidebar:hover::-webkit-scrollbar-thumb { background: rgb(179, 178, 178); border-radius: 500px;}
+#sidebar::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+
+#section::-webkit-scrollbar { width: 10px; }
+#section::-webkit-scrollbar-track { background: #fff; }
+#section::-webkit-scrollbar-track-piece{ background: #fff; }
+#section::-webkit-scrollbar-thumb { background: rgb(98, 97, 97);border-radius: 500px; }
+#section::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+
+
+
+
+    .section{
+      right: 0px;
+      top: 130px;
+      z-index: -2;
+      position: fixed;
+      float: right;
+    width:87.5%;
+    background-color: rgb(245, 245, 245);
+    height: 800px;
+    overflow: auto;
+    
+}
+.white{
+  right: -20px;
+      top: 0px;
+      z-index: -2;
+      position: fixed;
+      float: right;
+    width:87.5%;
+    height: 800px;
+    overflow: auto;
+}
+.premium{
+      right:0;
+      top: 130px;
+      z-index: -2;
+      
+      float: left;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    
+
+
+
+}
+
+.x{
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  color: rgb(70, 69, 69);
+}
+
+
+
+
+
+
+
+
+
+
+.biglogo{
+  position: relative;
+  left:85px;
+  top: 5px;
+}
+
+
+.adsword1{
+  background-color: white;
+  position: relative;
+  left:88px;
+  width: 600px;
+  font-size: 1.7rem;
+  margin-top: 5px;
+
+}
+.adsword2{
+  position: relative;
+  left: 85px;
+  top: 85px;
+  border: 2px solid blue;
+  color:blue;
+  width: 120px;
+  padding-top: 12px;
+  padding-left: 13px;
+  height: 45px;
+
+}
+.ccc{
+  position: relative;
+  left: 550px;
+  bottom: 100px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.box{
+  float: left;
+  padding-left: 50px;
+  margin-top: 40px;
+  font-size: 0;
+  width: 400px;
+  height:350px
+}
+.little{
+  float: left;
+  margin-top: 10px;
+}
+p{width: 280px;}
+.pp{
+  padding-left: 15px;
+  font-size: 1.1rem;
+  float: left;
+  color: rgb(2, 2, 2);
+  margin-top: 20px;
+}
+
+.gray{
+  font-size: 1rem;
+  padding-left:75px ;
+  clear: left;
+  color: rgb(88, 88, 88);
+}
+
+  </style>
+  
+</head>
+<body>
+
+  <div class="lefttop666">
+
+    <img src="./img/sidebar.png" alt="列表icon" class="leftlist">
+    <img src="./img/bigicon.png" alt="大icon" class="leftbigicon">
+    </div>
+
+
+
+  <div class="sidebar" id="sidebar">
+
+
+  
+
+    <div class="side side1"><i class="twicon-red-house iconbig firsticon"></i><span>Home</span></div>
+    <div class="side"><i class="twicon-l-ipass iconbig"></i><span>Explore</span></div>
+    <div class="side"><i class="twicon-l-dcard iconbig"></i><span>Subscriptions</span></div>
+    <hr>
+
+    <div class="side"><i class="twicon-l-wemo iconbig"></i><span>Library</span></div>
+    <div class="side"><i class="twicon-l-17live iconbig"></i><span>History</span></div>
+    <hr>
+    <div class="side_m">Sign in to like videos<br>,comment,and subscribe.</div>
+    <img src="./img/sign1.png" alt="signIcon" class="signicon">
+    <hr>
+
+    <div class="side_b">BEST OF YOUTUBE</div>
+    <div class="side"><i class="twicon-l-pixnet iconbig"></i><span>Music</span></div>
+    <div class="side"><i class="twicon-l-nh-insurance iconbig"></i><span>Sports</span></div>
+    <div class="side"><i class="twicon-green-man iconbig"></i><span>Gaming</span></div>
+    <div class="side"><i class="twicon-red-man iconbig"></i><span>Moives</span></div>
+    <div class="side"><i class="twicon-queue-box iconbig"></i><span>News</span></div>
+    <div class="side"><i class="twicon-recycling iconbig"></i><span>Live</span></div>
+    <div class="side"><i class="twicon-trash iconbig"></i><span>360°Video</span></div>
+    <hr>
+    <div class="side"><i class="twicon-black-bear iconbig"></i><span>Browse channels</span></div>
+    <hr>
+    <div class="side_b">MORE FROM YOUTUBE</div>
+    <div class="side"><i class="twicon-flying-fish iconbig"></i><span>Youtube Premium</span></div>
+    <div class="side"><i class="twicon-slipper iconbig"></i><span> Live</span></div>
+    <hr>
+    <div class="side"><i class="twicon-electric-pot iconbig"></i><span>Settings</span></div>
+    <div class="side"><i class="twicon-fortune iconbig"></i><span>Report history</span></div>
+    <div class="side"><i class="twicon-couplets iconbig"></i><span>Help</span></div>
+    <div class="side"><i class="twicon-apple-cider iconbig"></i><span>Send feedback</span></div>
+    <hr>
+
+    <div class="lbb">
+    <span class="side_bottom">About</span>
+    <span class="side_bottom">Press</span>
+    <span class="side_bottom">Copyright</span>
+    <span class="side_bottom">Contact us</span>
+    
+    <span class="side_bottom">Creators</span>
+    <span class="side_bottom">Advertise</span>
+    <span class="side_bottom">Developers</span>
+  </div>
+
+  <div class="lbb">
+    <span class="side_bottom">Terms</span>
+    <span class="side_bottom">Privacy</span>
+    <span class="side_bottom">Policy& SafetyHow</span>
+    <span class="side_bottom">How Youtube works</span>
+    <span class="side_bottom">Test new features</span>
+    
+  </div>
+
+      <div class="leftfinal">© 2021 Google LLC</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    <div class="top">
+
+      <input type="search" name="search" id="search">
+      <img src="./img/search.png" alt="searchicon" class="searchIcon">
+      <img src="./img/mic.png" alt="mic" class="mic">
+
+      <img src="./img/sign1.png" alt="signicon" class="sign_top">
+      <img src="./img/003.png" alt="3" class="three">
+      <img src="./img/009.png" alt="9" class="nine">
+
+      <hr class="right">
+
+      <div class="top_bottom1">All</div>
+      <div class="top_bottom2">Music</div>
+      <div class="top_bottom3">Live</div>
+      <div class="top_bottom4">Anime</div>
+      <div class="top_bottom5">Videogame</div>
+    
+    
+    
+    </div>
+
+    
+    <div class="section" id="section">
+
+      <div class="white"></div>
+
+
+
+
+
+      <div class="premium">
+        <div class="x">x</div>
+
+        <img src="./img/logo.png" alt="logo" class="biglogo">
+
+        <div class="adsword1">Watching everything you without ads.</div>
+        <div class="adsword2">GET IT NOW</div>
+        <img src="./img/cccc.png" alt="computer" class="ccc">
+
+
+      </div>
+
+
+      
+
+        <div class="box">
+        <img src="./images/001.png" alt="洗腦神曲">
+        
+        
+        
+        
+            <img src="./images/0001.png" alt="001" class="little">
+            <p class="pp">
+    
+          50首突破百萬的洗腦神曲你一定有
+          聽過多想留在你身邊(少年,你的...</p>
+    
+          <p class="gray">甜美的旋律Sweet Melody<br>
+          觀看次數:62萬次，1個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+    
+      <div class="box">
+        <img src="./images/002.png" alt="英雄神秘客">
+        
+        
+        
+        
+            <img src="./images/0002.png" alt="002" class="little">
+            <p class="pp">
+    
+          英雄神秘客EP25，台南網咖住宿
+          <br>飲料無限暢飲食物隨時有!</p>
+    
+          <p class="gray">英雄日常Heroisme<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:68萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+      <div class="box">
+        <img src="./images/003.png" alt="鄧紫棋平行世界">
+        
+        
+        
+        
+            <img src="./images/0003.png" alt="003" class="little">
+            <p class="pp">
+    
+          G.E.M鄧紫棋[平行世界
+          <br>Parallel]MV(電影《刺殺小說...</p>
+    
+          <p class="gray">GEM鄧紫棋<sub><img src="images/音符.png"></sub><br>
+          觀看次數:389萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/004.png" alt="終局之戰">
+        
+        
+        
+        
+            <img src="./images/0004.png" alt="004" class="little">
+            <p class="pp">
+    
+          重看復仇者聯盟4終局之戰微細節
+          <br>分析!鋼鐵人交換手套掉碎片/...</p>
+    
+          <p class="gray">TEEPR叭啦叭啦研究室<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:79萬次，10個月前</p>
+    
+            
+    
+      </div>
+    
+      <div class="box">
+        <img src="./images/005.png" alt="關鍵時刻">
+        
+        
+        
+        
+            <img src="./images/0005.png" alt="005" class="little">
+            <p class="pp">
+    
+          精選|菲小老弟翻臉?美碎「一
+          <br>帶一路」大業 中資千億合約急喊...</p>
+    
+          <p class="gray">關鍵時刻<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:34萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/006.png" alt="大自然音律">
+        
+        
+        
+        
+            <img src="./images/0006.png" alt="006" class="little">
+            <p class="pp">
+    
+              「無廣告版」森林系音樂&鋼琴吉
+          <br>他和大自然音律<sub><img src="./images/coffee.png"></sub>最放鬆讀書...</p>
+    
+          <p class="gray" style="margin-top:28px">Music For Studying<br>
+          觀看次數:42萬次，5個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/007.png" alt="奇怪餐點名稱">
+        
+        
+        
+        
+            <img src="./images/0007.png" alt="007" class="little">
+            <p class="pp">
+    
+          不要再取奇怪的餐點名稱了|#吹
+          <br>你腦|喬瑟夫ChillSeph</p>
+    
+          <p class="gray">喬瑟夫ChillSeph<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:514萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/008.png" alt="瘋神無雙">
+        
+        
+        
+        
+            <img src="./images/0008.png" alt="008" class="little">
+            <p class="pp">
+    
+          瘋神無雙 官方正版【瘋神歌舞團--
+          <br>---鬼滅之刃完整版】</p>
+    
+          <p class="gray">瘋神無雙<br>
+          觀看次數:48萬次，9個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+    
+
+      <div class="box">
+        <img src="./images/001.png" alt="洗腦神曲">
+        
+        
+        
+        
+            <img src="./images/0001.png" alt="001" class="little">
+            <p class="pp">
+    
+          50首突破百萬的洗腦神曲你一定有
+          聽過多想留在你身邊(少年,你的...</p>
+    
+          <p class="gray">甜美的旋律Sweet Melody<br>
+          觀看次數:62萬次，1個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+    
+      <div class="box">
+        <img src="./images/002.png" alt="英雄神秘客">
+        
+        
+        
+        
+            <img src="./images/0002.png" alt="002" class="little">
+            <p class="pp">
+    
+          英雄神秘客EP25，台南網咖住宿
+          <br>飲料無限暢飲食物隨時有!</p>
+    
+          <p class="gray">英雄日常Heroisme<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:68萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+      <div class="box">
+        <img src="./images/003.png" alt="鄧紫棋平行世界">
+        
+        
+        
+        
+            <img src="./images/0003.png" alt="003" class="little">
+            <p class="pp">
+    
+          G.E.M鄧紫棋[平行世界
+          <br>Parallel]MV(電影《刺殺小說...</p>
+    
+          <p class="gray">GEM鄧紫棋<sub><img src="images/音符.png"></sub><br>
+          觀看次數:389萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/004.png" alt="終局之戰">
+        
+        
+        
+        
+            <img src="./images/0004.png" alt="004" class="little">
+            <p class="pp">
+    
+          重看復仇者聯盟4終局之戰微細節
+          <br>分析!鋼鐵人交換手套掉碎片/...</p>
+    
+          <p class="gray">TEEPR叭啦叭啦研究室<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:79萬次，10個月前</p>
+    
+            
+    
+      </div>
+    
+      <div class="box">
+        <img src="./images/005.png" alt="關鍵時刻">
+        
+        
+        
+        
+            <img src="./images/0005.png" alt="005" class="little">
+            <p class="pp">
+    
+          精選|菲小老弟翻臉?美碎「一
+          <br>帶一路」大業 中資千億合約急喊...</p>
+    
+          <p class="gray">關鍵時刻<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:34萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/006.png" alt="大自然音律">
+        
+        
+        
+        
+            <img src="./images/0006.png" alt="006" class="little">
+            <p class="pp">
+    
+              「無廣告版」森林系音樂&鋼琴吉
+          <br>他和大自然音律<sub><img src="./images/coffee.png"></sub>最放鬆讀書...</p>
+    
+          <p class="gray" style="margin-top:28px">Music For Studying<br>
+          觀看次數:42萬次，5個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/007.png" alt="奇怪餐點名稱">
+        
+        
+        
+        
+            <img src="./images/0007.png" alt="007" class="little">
+            <p class="pp">
+    
+          不要再取奇怪的餐點名稱了|#吹
+          <br>你腦|喬瑟夫ChillSeph</p>
+    
+          <p class="gray">喬瑟夫ChillSeph<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:514萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/008.png" alt="瘋神無雙">
+        
+        
+        
+        
+            <img src="./images/0008.png" alt="008" class="little">
+            <p class="pp">
+    
+          瘋神無雙 官方正版【瘋神歌舞團--
+          <br>---鬼滅之刃完整版】</p>
+    
+          <p class="gray">瘋神無雙<br>
+          觀看次數:48萬次，9個月前</p>
+    
+            
+    
+      </div>
+    
+      
+    
+      <div class="box">
+        <img src="./images/001.png" alt="洗腦神曲">
+        
+        
+        
+        
+            <img src="./images/0001.png" alt="001" class="little">
+            <p class="pp">
+    
+          50首突破百萬的洗腦神曲你一定有
+          聽過多想留在你身邊(少年,你的...</p>
+    
+          <p class="gray">甜美的旋律Sweet Melody<br>
+          觀看次數:62萬次，1個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+    
+      <div class="box">
+        <img src="./images/002.png" alt="英雄神秘客">
+        
+        
+        
+        
+            <img src="./images/0002.png" alt="002" class="little">
+            <p class="pp">
+    
+          英雄神秘客EP25，台南網咖住宿
+          <br>飲料無限暢飲食物隨時有!</p>
+    
+          <p class="gray">英雄日常Heroisme<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:68萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+    
+    
+      <div class="box">
+        <img src="./images/003.png" alt="鄧紫棋平行世界">
+        
+        
+        
+        
+            <img src="./images/0003.png" alt="003" class="little">
+            <p class="pp">
+    
+          G.E.M鄧紫棋[平行世界
+          <br>Parallel]MV(電影《刺殺小說...</p>
+    
+          <p class="gray">GEM鄧紫棋<sub><img src="images/音符.png"></sub><br>
+          觀看次數:389萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/004.png" alt="終局之戰">
+        
+        
+        
+        
+            <img src="./images/0004.png" alt="004" class="little">
+            <p class="pp">
+    
+          重看復仇者聯盟4終局之戰微細節
+          <br>分析!鋼鐵人交換手套掉碎片/...</p>
+    
+          <p class="gray">TEEPR叭啦叭啦研究室<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:79萬次，10個月前</p>
+    
+            
+    
+      </div>
+    
+      <div class="box">
+        <img src="./images/005.png" alt="關鍵時刻">
+        
+        
+        
+        
+            <img src="./images/0005.png" alt="005" class="little">
+            <p class="pp">
+    
+          精選|菲小老弟翻臉?美碎「一
+          <br>帶一路」大業 中資千億合約急喊...</p>
+    
+          <p class="gray">關鍵時刻<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:34萬次，1週前</p>
+    
+            
+    
+      </div>
+    
+    
+      <div class="box">
+        <img src="./images/006.png" alt="大自然音律">
+        
+        
+        
+        
+            <img src="./images/0006.png" alt="006" class="little">
+            <p class="pp">
+    
+              「無廣告版」森林系音樂&鋼琴吉
+          <br>他和大自然音律<sub><img src="./images/coffee.png"></sub>最放鬆讀書...</p>
+    
+          <p class="gray" style="margin-top:28px">Music For Studying<br>
+          觀看次數:42萬次，5個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/007.png" alt="奇怪餐點名稱">
+        
+        
+        
+        
+            <img src="./images/0007.png" alt="007" class="little">
+            <p class="pp">
+    
+          不要再取奇怪的餐點名稱了|#吹
+          <br>你腦|喬瑟夫ChillSeph</p>
+    
+          <p class="gray">喬瑟夫ChillSeph<sub><img src="./images/勾勾.png"></sub><br>
+          觀看次數:514萬次，2個月前</p>
+    
+            
+    
+      </div>
+    
+      
+      <div class="box">
+        <img src="./images/008.png" alt="瘋神無雙">
+        
+        
+        
+        
+            <img src="./images/0008.png" alt="008" class="little">
+            <p class="pp">
+    
+          瘋神無雙 官方正版【瘋神歌舞團--
+          <br>---鬼滅之刃完整版】</p>
+    
+          <p class="gray">瘋神無雙<br>
+          觀看次數:48萬次，9個月前</p>
+    
+            
+    
+      </div>
+    
+      </div>
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
